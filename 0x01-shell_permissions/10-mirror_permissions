@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod RFILE hello ellho
+chmod hello=olleh
