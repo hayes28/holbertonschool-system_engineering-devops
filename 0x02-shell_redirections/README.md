@@ -17,8 +17,8 @@ Details for each script in 0x02. Shell, I/O Redirections and filters assignment.
 14. Display lines containing the pattern "root" from the file /etc/passwd
 15. Displays the number of lines that contain the pattern “bin” in the file (i)/etc/passwd(/i)
 16. Displays lines containing the pattern “root” and 3 lines after them in the file (i)/etc/passwd(/i)
-17. Displays all the lines in the file (i)/etc/passwd(/i) that do not contain the pattern “bin”
-18. Displays all lines of the file (i)/etc/ssh/sshd_config(/i) starting with a letter
+17. Displays all the lines in the file /etc/passwd that do not contain the pattern “bin”
+18. Displays all lines of the file /etc/ssh/sshd_config starting with a letter
 19. Replaces all characters A and c from input to Z and e respectively
 20. Script that removes all letters c and C from input
 21. Script that reverse its input
