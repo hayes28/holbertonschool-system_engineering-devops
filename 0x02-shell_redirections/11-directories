@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type d -not -name '.' | wc -1
+ls -lR | grep ^d | wc -1
