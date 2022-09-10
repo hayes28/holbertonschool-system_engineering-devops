@@ -1,2 +1,2 @@
 #!/bin/bash
-find ./path -maxdepth 1 -type d
+find . (($PATH -type d))
