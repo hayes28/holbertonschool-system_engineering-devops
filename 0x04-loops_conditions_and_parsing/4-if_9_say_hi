@@ -1,4 +1,4 @@
-#!/user/bin/env bash
+#!/usr/bin/env bash
 # This is a script using while loop along with if command to display Best School and hi
 i=1
 while [ $i -le 10 ]
