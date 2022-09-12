@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
-#This is a script using 'while' loop to display "Best School" 10 times
-i=0
-while [ $i -lt 10 ];
+# This is a script using 'while' loop to display "Best School" 10 times
+i=1	
+while [ $i -le 10 ]
 do 
-echo "Best School";
+	echo "Best School"
+	i=$(( $i + 1 ))
 done
