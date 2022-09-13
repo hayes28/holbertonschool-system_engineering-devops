@@ -2,16 +2,13 @@
 # Script displaying the time 12:59 using while loop
 
 	HOURS=0
-
 while [ $HOURS -le 12 ]
 	do
-	echo "Hour:$HOURS" 
+	echo "Hour: $HOURS" 
 	MINUTES=1
-
 	while
 	 [ $MINUTES -le 59 ]
 	do
-	
 	echo "$MINUTES"
 	((MINUTES++))
 	done
