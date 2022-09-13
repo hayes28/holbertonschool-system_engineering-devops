@@ -7,12 +7,10 @@ while [ $HOUR -le 12 ]
 	do
 	echo "Hour:$HOUR"
 	(( HOUR++ )) 
-done 
-
-MINUTE=1
-
-while [ $MINUTE -le 59 ]
-	do
-	echo "Minute:$MINUTE"
-	(( MINUTE++ ))
-done
+	MINUTE=1
+	while [ $MINUTE -le 59 ]
+		do
+		echo "$MINUTE"
+		(( MINUTE++ ))
+		done
+	done 
