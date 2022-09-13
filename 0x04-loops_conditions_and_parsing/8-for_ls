@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
 # Script that displays in long format as well as hidden files in the working directory
 
-ls -la ~/
+for i in { ls -la ~/ "\n" }
+do
+	echo "files $i"
+done

@@ -4,15 +4,15 @@
 HOUR=0
 
 while [ $HOUR -le 12 ]
-do
-	echo "Hours:$HOUR"
-	(( HOUR++ ))
+	do
+	echo "Hour:$HOUR"
+	(( HOUR++ )) 
 done 
 
 MINUTE=1
 
 while [ $MINUTE -le 59 ]
-do
-	echo "Minutes:$MINUTE"
+	do
+	echo "Minute:$MINUTE"
 	(( MINUTE++ ))
 done
