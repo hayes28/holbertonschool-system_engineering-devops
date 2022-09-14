@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 # Script that displays in long format as well as hidden files in the working directory
-
-for FILE
-in *;
+for FILE in *
 do
-	echo "FILE" | cut -d "_" -f 2
+	echo "$FILE" | cut -d'-' -f2
 done
