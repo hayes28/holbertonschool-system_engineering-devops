@@ -1,2 +1,4 @@
 #!/usr/bin/env bash
-# 
+# Script that displays Bash PID
+# shellcheck disable=SC2009
+$BASHPID
