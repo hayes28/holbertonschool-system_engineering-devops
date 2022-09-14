@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Script using kill to stop an infinite loop.
+kill - 4-to_infinity_and_beyond

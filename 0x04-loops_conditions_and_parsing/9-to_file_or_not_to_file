@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Script that gives info about a file using 'if' and 'else'.
+
