@@ -1,0 +1,3 @@
+#!/bin/env bash
+# Script to kill the process of 7-highlander.
+kill 4850
