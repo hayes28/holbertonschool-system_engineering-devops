@@ -1,23 +1,26 @@
 #!/usr/bin/env bash
 # install nginx on remote server
-
 apt-get update
 apt-get upgrade -y
 apt-get install -y nginx
 mkdir /etc/nginx/html
-touch /etc/nginx/html/index.html /etc/nginx/html/404.html
-echo "Hello World!" > /etc/nginx/html/index.html
+touch /etc/nginx/html/index_temp.html /etc/nginx/html/404.html
+echo "Hello World!" > /etc/nginx/html/index_temp.html
 echo "Ceci n'est pas une page" > /etc/nginx/html/404.html
+cp /etc/nginx/html/index_temp.html /etc/nginx/html/index.html
+rm /etc/nginx/html/index_temp.html
 printf %s "server {
-listen 80;
-    server_name localhost;
-    location / {
-        root /etc/nginx/html;
-        index index.html;
-    }
-    location /redirect {
-        return 301 https://www.hayesholberton.tech;
+    listen  80 default_server;
+    listen  [::]:80 default_server;
+    root    /etc/nginx/html;
+    index   index.html;
+    location /redirect_me {
+        return 301 http://hayesholberton.tech/;
     }
     error_page 404 /404.html;
+    location /404 {
+      root /etc/nginx/html;
+      internal;
+    }
 }" > /etc/nginx/sites-available/default
-sudo service nginx restart
+service nginx restart
