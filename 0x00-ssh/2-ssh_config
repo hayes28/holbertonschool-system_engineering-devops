@@ -22,7 +22,7 @@ Host *
 #   ForwardX11Trusted yes
 #   RhostsRSAAuthentication no
 #   RSAAuthentication yes
-#   PasswordAuthentication yes
+   PasswordAuthentication yes
 #   HostbasedAuthentication no
 #   GSSAPIAuthentication no
 #   GSSAPIDelegateCredentials no
@@ -34,7 +34,7 @@ Host *
 #   ConnectTimeout 0
 #   StrictHostKeyChecking ask
 #   IdentityFile ~/.ssh/identity
-#   IdentityFile ~/.ssh/id_rsa
+   IdentityFile ~/.ssh/id_rsa
 #   IdentityFile ~/.ssh/id_dsa
 #   Port 22
 #   Protocol 2,1
@@ -50,12 +50,12 @@ Host *
 #   RekeyLimit 1G 1h
     SendEnv LANG LC_*
     HashKnownHosts yes
-    GSSAPIAuthentication yes
-    GSSAPIDelegateCredentials no
+# GSSAPIAuthentication yes
+# GSSAPIDelegateCredentials no
 
 # SSH client configration
 
 Host 5549-web-01
-HostName 35.180.28.17
+HostName 15.236.51.24
 User ubuntu
 IdentifyFile ~/.ssh/school
