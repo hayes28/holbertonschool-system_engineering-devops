@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Bash script that installs nginx on a server
+# Bash script that installs nginx on a server.
 
 apt-get update
 apt-get upgrade
