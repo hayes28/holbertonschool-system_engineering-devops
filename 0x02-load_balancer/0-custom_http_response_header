@@ -10,7 +10,7 @@ touch /etc/nginx/html/index.html /etc/nginx/html/404.html
 echo "Hello World!" > /etc/nginx/html/index.html
 echo "Ceci n'est pas une page" > /etc/nginx/html/404.html
 # config nginx to listen on port 80
-printf %s "server {
+echo "server {
     listen 80 default_server;
     listen [::]:80 default_server;
     root /etc/nginx/html;
