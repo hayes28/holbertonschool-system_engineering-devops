@@ -15,7 +15,7 @@ echo "server {
     listen [::]:80 default_server;
     root /etc/nginx/html;
     index index.html;
-    add_header x-Server-by $HOSTNAME;
+    add_header X-Server-By $HOSTNAME;
     location /redirect_me {
         return 301 https://www.hayesholberton.tech;
     }
