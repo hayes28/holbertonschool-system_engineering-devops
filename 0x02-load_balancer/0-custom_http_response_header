@@ -11,18 +11,18 @@ echo "Hello World!" > /etc/nginx/html/index.html
 echo "Ceci n'est pas une page" > /etc/nginx/html/404.html
 # config nginx to listen on port 80
 printf %s "server {
-    listen 80 default_server;
-    listen [::]:80 default_server;
-    root /etc/nginx/html;
-    index index.html;
-    add_header X-Server-By $HOSTNAME;
+    listen  80 default_server;
+    listen  [::]:80 default_server;
+    root    /etc/nginx/html;
+    index   index.html;
+    add_header X-Served-By $HOSTNAME;
     location /redirect_me {
-        return 301 https://www.hayesholberton.tech;
+        return 301 http://hayesholberton.tech/;
     }
     error_page 404 /404.html;
-    location = /404 {
-    root /etc/nginx/html;
-    internal;
+    location /404 {
+      root /etc/nginx/html;
+      internal;
     }
 }" > /etc/nginx/sites-available/default
-service nginx restart
+service nginx restartS
