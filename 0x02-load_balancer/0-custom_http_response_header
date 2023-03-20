@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 # Update and Install nginx on remote server
 
-sudo apt-get update
-sudo apt-get upgrade -y
-sudo apt-get install -y nginx
+apt-get update
+apt-get upgrade -y
+apt-get install -y nginx
 # create Hello World html file
 mkdir -p /etc/nginx/html
 touch /etc/nginx/html/index.html /etc/nginx/html/404.html
