@@ -34,10 +34,10 @@ if __name__ == '__main__':
             response_name.status_code))
         exit(1)
 
-    employee_name = response_name.json().get('username')
+    employee_name = response_name.json().get("username")
     filename = "{}.csv".format(EMPLOYEE_ID)
 
-    with open(filename, 'w', newline='') as csvfile:
+    with open(filename, mode='w', newline='') as csvfile:
         fieldnames = ['USER_ID', 'USERNAME',
                       'TASK_COMPLETED_STATUS', 'TASK_TITLE']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames,
