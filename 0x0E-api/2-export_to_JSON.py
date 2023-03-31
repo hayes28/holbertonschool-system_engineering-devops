@@ -34,15 +34,15 @@ if __name__ == '__main__':
         exit(1)
 
     employee_name = response_name.json().get("username")
-    filename = "{}.csv".format(EMPLOYEE_ID)
+    filename = "{}.json".format(EMPLOYEE_ID)
 
     user_tasks = []
     for todo in todos:
         completed_status = True if todo["completed"] else False
         user_tasks.append({
-            'task': todo["title"],
-            'completed': completed_status,
-            'username': employee_name
+            "task": todo["title"],
+            "completed": completed_status,
+            "username": employee_name
         })
 
     data = {EMPLOYEE_ID: user_tasks}
