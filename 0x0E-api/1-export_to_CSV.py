@@ -25,9 +25,6 @@ if __name__ == '__main__':
         exit(1)
 
     todos = response.json()
-    total_tasks = len(todos)
-    done_tasks = [todo for todo in todos if todo['completed']]
-
     employee_name_url = "https://jsonplaceholder.typicode.com/users/{}".format(
         EMPLOYEE_ID)
     response_name = requests.get(employee_name_url)
